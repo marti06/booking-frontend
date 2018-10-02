@@ -1,2 +1,5 @@
 # booking-frontend
-frontend repo
+The frontend server for the Vibby platform.
+
+run:
+  node frontend_server.js

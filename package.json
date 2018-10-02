@@ -1,0 +1,23 @@
+{
+  "name": "booking-frontend",
+  "version": "1.0.0",
+  "description": "Frontend of booking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marti06/booking-frontend.git"
+  },
+  "homepage": "https://github.com/marti06/booking-frontend#readme",
+  "dependencies": {
+    "express": "4.16.3",
+    "gulp": "^3.9.1",
+    "gulp-watch": "^5.0.1",
+    "npmlog": "4.1.2",
+    "path": "^0.12.7",
+    "requirejs": "2.3.6",
+    "serve-static": "^1.13.2"
+  }
+}

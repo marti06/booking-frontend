@@ -1,0 +1,31 @@
+# Deployment files
+*.zip
+npm-shrinkwrap.json
+
+whitelist/
+config/runtime.json
+.tmp/
+dist/
+.sass-cache/
+
+logs/
+dump.rdb
+
+### IntelliJ ###
+*.iml
+*.ipr
+*.iws
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+**/.vscode/
+.DS_Store
+*/.DS_Store
+.DS_Store?
+*~
+node_modules
+*.swp
+
+bower_components
+min
