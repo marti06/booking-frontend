@@ -12,6 +12,8 @@
   },
   "homepage": "https://github.com/marti06/booking-frontend#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
     "ejs": "^2.6.1",
     "express": "4.16.3",
     "gulp": "^3.9.1",

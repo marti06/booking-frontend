@@ -15,20 +15,13 @@
             },
             link: function(scope) {
 
-                scope.options = {
-                    theme: '',
-                    travel: 'unplanned'
-                };
-                scope.themes = ["Marry Christmas", "Take a brake", "Miss u"];
+                scope.options = {};
 
                 scope.findThePerfectGift = () => {
-                    $rootScope.travelOptions = scope.options;
                     console.log(scope.options);
-                    //$location.url('/unplanned');
-                    //scope.url = 'http://localhost:3000/#/unplanned';
                     $window.localStorage.setItem('travelOptionsTheme', scope.options.theme);
-                    $window.localStorage.setItem('travelOptionsTravel', scope.options.travel);
-                    $window.open('http://localhost:3000/#/unplanned');
+                    $window.localStorage.setItem('travelOptionsTravel', scope.options.travel.unplanned);
+                    $window.open('http://192.168.10.216:3000/#/unplanned');
                 }
             }
         };

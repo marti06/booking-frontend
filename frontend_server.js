@@ -5,8 +5,9 @@ const log              = require('npmlog'),
       path             = require('path'),
       ejs              = require('ejs'),
       express          = require('express'),
-      request =         require('request');
-      //bookingController = require('server-src/booking');
+      cors             = require('cors'),
+      bodyParser       = require('body-parser'),
+      request          = require('request');
 
 let app = express();
 
@@ -32,11 +33,26 @@ app.get('/unplanned', function(req, res) {
         res.send(html);
     });
 });
+app.use(bodyParser.json());
 
-//app.get(`/api/booking/suggestions`, bookingController.getSuggestions);
-//app.post(`/api/booking/createGift`, function(req,res) {
-
-//});
+const apiCORSHandler = cors({
+                        uri: "http://ea05cd32.ngrok.io",
+                        methods: 'GET, POST, PUT, OPTIONS, DELETE',
+                        preflightContinue: true,
+                        credentials: true,
+                        origin: true
+});
+app.use(`/api/*`, apiCORSHandler);
+app.post(`/api/booking/createUnplannedGift`, function(req,res) {
+    request.post('http://ea05cd32.ngrok.io/createUnplannedGift', {json: req.body}, function(err, res, body){
+        if (body.state === 200) {
+            console.log('success');
+            return {status: 200};
+        } else {
+            return {status: 500};
+        }
+    });
+});
 
 app.listen(3000, function() {
   log.info('Server started and listening on port 3000');

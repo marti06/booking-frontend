@@ -2,26 +2,31 @@
     <button style="border: none;float: right" class="close-btn font-size-3" type="button" ng-click="close()"><i class="fa fa-times-circle"></i></button>
     <br/>
     <div>
-        <h3 class="travel_name">Give the gift of travel</h3><br/><br/>
+        <h3 class="travel_name">Give the gift of travel</h3><br/>
         <span class="travel_label">I want to help a loved one experience the world with the gift of travel. Their trip is:</span>
         <br/><br/>
         <label>
-            <input class="radio_input" type="radio" ng-model="options.travel" value="planned">
+            <input class="checkbox_input" type="checkbox" ng-model="options.travel.planned" value="planned">
             <span class="travel_radio">Planned - I know the destination and dates</span>
         </label><br/>
         <label>
-            <input class="radio_input" type="radio" ng-model="options.travel" value="unplanned">
+            <input class="checkbox_input" type="checkbox" ng-model="options.travel.unplanned" value="unplanned">
             <span class="travel_radio">Unplanned - I don't know the destination and dates</span>
         </label><br/>
     </div>
 
-    <br/><br/><br/>
+    <br/>
 
     <span class="travel_label">What's the occasion?</span><br/><br/>
-    <select ng-model="options.theme" ng-options="theme for theme in themes"></select>
+    <select ng-model="options.theme" style="border-color: #bdbdbd;background-color: #fff;border: 2px rgba(0,0,0,0.5) solid;border-radius: 3px padding: 8px 16px;width: 100%;height: 40px;">
+        <option value="" disabled selected hidden>Pick a theme for your gift from the options below</option>
+        <option value="Happy Birthday">Happy Birthday</option>
+        <option value="Take a break">Take a break</option>
+        <option value="Christmas cheer">Christmas cheer</option>
+    </select>
 
-    <br/><br/><br/>
-    <button class="find_gift_btn" ng-click="findThePerfectGift()">
+    <br/><br/>
+    <button class="find_gift_btn" ng-click="findThePerfectGift()" style="color: #fff;font-size: 14px;font-weight: normalbackground-color: #07c;border-color: #07c;border-radius: 3px;padding: 8px 16px;width: 100%;">
         Find The Perfect Gift!
     </button>
 

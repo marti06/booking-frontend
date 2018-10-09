@@ -20,15 +20,7 @@
                         }
                     });
 
-                    let request = new XMLHttpRequest();
 
-                    request.open("POST", '/api/booking/createGift', true);
-                    request.withCredentials = false;
-                    request.setRequestHeader('Content-Type', 'application/json');
-
-                    request.onload = function() {
-                        console.log(request.responseText);
-                    };
                 }
 
             }
