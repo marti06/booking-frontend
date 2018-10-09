@@ -1,0 +1,41 @@
+.travel_name {
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: #383838
+}
+
+.travel_label {
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.travel_radio {
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4285714286em;
+    display: inline-block;
+    position: relative;
+    min-height: 14px;
+    padding: 0 0 0 28px;
+}
+
+.radio_input {
+    border-color: #bdbdbd;
+    background-color: #fff;
+    border: 2px rgba(0,0,0,0.5) solid;
+    border-radius: 2px;
+    height: 20px;
+    width: 20px;
+}
+
+.find_gift_btn {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #07c;
+    border-color: #07c;
+    border-radius: 3px;
+    padding: 8px 16px;
+}

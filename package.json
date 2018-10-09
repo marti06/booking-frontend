@@ -12,11 +12,16 @@
   },
   "homepage": "https://github.com/marti06/booking-frontend#readme",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "4.16.3",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-css": "^0.1.0",
+    "gulp-image": "^4.3.0",
     "gulp-watch": "^5.0.1",
     "npmlog": "4.1.2",
     "path": "^0.12.7",
+    "request": "^2.88.0",
     "requirejs": "2.3.6",
     "serve-static": "^1.13.2"
   }
