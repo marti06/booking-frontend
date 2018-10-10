@@ -4,6 +4,6 @@
     'use strict';
 
     angular
-        .module('booking', ['ui.bootstrap', 'ngRoute'])
+        .module('booking', ['ui.bootstrap', 'ngRoute', 'mgcrea.ngStrap', 'ngSanitize'])
 
 })();

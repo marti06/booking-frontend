@@ -17,7 +17,7 @@
         $scope.currency = 'EUR';
         $scope.giver = {};
         $scope.receiver = {};
-        document.getElementById("backgroundImageDiv").style.backgroundImage = "url('http://192.168.10.216:3000/static/images/christmas.jpg')";
+        document.getElementById("backgroundImageDiv").style.backgroundImage = "url('http://c9b1ead3.ngrok.io/static/images/christmas.jpg')";
 
 
         $scope.viewGiftOptionsBtn = () => {
@@ -38,12 +38,12 @@
                 'senderName' : $scope.giver.name,
                 'senderLastName' : $scope.giver.lastName,
                 'citySuggestions' : ['city1', 'city2', 'city3'],
-                'note' : 'Hi there happy birthday!',
+                'note' : $scope.receiver.note,
                 'currency' : $scope.currency
             };
 
             console.log(dataToSend);
-            request.open('POST', 'http://192.168.10.216:3000/api/booking/createUnplannedGift', true);
+            request.open('POST', 'http://c9b1ead3.ngrok.io/api/booking/createUnplannedGift', true);
             request.withCredentials = false;
             request.setRequestHeader('Content-Type', 'application/json');
             request.send(JSON.stringify(dataToSend));
